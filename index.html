@@ -1,0 +1,90 @@
+<!DOCTYPE html >
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Makers</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heeden">
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+    </div>
+    <div class="continer">
+      <div class="text-prodactat">
+        <input type="text" class="title" placeholder="اسم المتطوع" />
+      </div>
+      <div class="price-taxes-ads-total">
+        <input class="price" type="number" placeholder="المبلغ" min="0" />
+        <input class="texes" type="number" placeholder="الاسهم الاضافيه (بونص / يكتب المبلغ)" min="0" />
+        <input class="ads" type="text" placeholder="التوريد" min="0" />
+        <input class="discount" type="text" placeholder="اسم الفريق" min="0" />
+        <button class="total">المجموع : <span class="totla-span"></span></button>
+      </div>
+      <div class="count-div">
+        <input type="number" placeholder="عدد المدخلات" class="count" min="0" />
+      </div>
+      <div class="category-div">
+        <input type="text" placeholder="ملاحظات" class="category" />
+      </div>
+      <button class="creat">create</button>
+    </div>
+    <div class="continer-search">
+      <input type="text" class="search" placeholder="بحث" />
+      <div class="button-search">
+        <button onclick="getsearchmood(this.className)" class="search-title">
+          بحث بالاسم
+        </button>
+        <button onclick="getsearchmood(this.className)" class="search-calgary">
+          بحث بالملاحظات
+        </button>
+      </div>
+      <div class="add-delete-button">
+        <!-- <button class="delet-all">Delete All</button> -->
+      </div>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>رقم</th>
+              <th>اسم المتطوع</th>
+              <th>المبلغ</th>
+              <th>الاسهم الاضافيه</th>
+              <th>التوريد</th>
+              <th>اسم الفريق</th>
+              <th>ملاحظات</th>
+              <th>المجموع</th>
+              <th class="update-td">تحديث</th>
+              <th class="delete-td">حذف</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <div class="end">
+    <p>Copyright © 2022  This Form By Has Been Developed | Ebrahim Elabd</p>
+  </div>
+    <script src="main.js"></script>
+  </body>
+</html>
